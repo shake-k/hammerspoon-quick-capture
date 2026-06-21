@@ -1,6 +1,6 @@
 -- Dropbox-macOS quick-capture (production)
 -- Option+Space opens a centered modal (title + body). Save writes a
--- vault-compliant Markdown file to ~/second-brain-mk1/_inbox/.
+-- vault-compliant Markdown file to ~/second-brain-mk2/_inbox/.
 -- Phase 3 spike validated bind + webview + JS->Lua bridge. Phase 4 adds
 -- file write with YAML frontmatter, slug filename, and collision-safe naming.
 
@@ -10,7 +10,7 @@ local M = {}
 M.webview = nil
 M.controller = nil
 
-local INBOX = os.getenv("HOME") .. "/second-brain-mk1/_inbox/"
+local INBOX = os.getenv("HOME") .. "/second-brain-mk2/_inbox/"
 
 local HTML = [[
 <!doctype html>
